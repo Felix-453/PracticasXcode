@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="picketViewProyect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GO1-mg-h70">
+                                <rect key="frame" x="40" y="606" width="334" height="65"/>
+                                <connections>
+                                    <action selector="pageAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lgl-k8-L76"/>
+                                </connections>
+                            </pageControl>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVn-dU-V7v">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </pickerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1FH-Gg-2qp">
+                                <rect key="frame" x="142" y="202" width="131" height="31"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="3pK-dn-ef2"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1FH-Gg-2qp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="5fX-t4-Cjr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GO1-mg-h70" secondAttribute="trailing" constant="40" id="BgS-ZW-yOE"/>
+                            <constraint firstItem="kVn-dU-V7v" firstAttribute="top" secondItem="1FH-Gg-2qp" secondAttribute="bottom" constant="108" id="KS6-yP-fux"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1FH-Gg-2qp" secondAttribute="trailing" constant="141" id="QM2-Yj-xkz"/>
+                            <constraint firstItem="1FH-Gg-2qp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="RjL-aE-OaB"/>
+                            <constraint firstItem="kVn-dU-V7v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sr0-UU-qad"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GO1-mg-h70" secondAttribute="bottom" constant="191" id="T5v-bv-N02"/>
+                            <constraint firstItem="GO1-mg-h70" firstAttribute="top" secondItem="kVn-dU-V7v" secondAttribute="bottom" constant="50" id="hNI-Vg-Vci"/>
+                            <constraint firstItem="GO1-mg-h70" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="lZv-1b-pkO"/>
+                            <constraint firstItem="kVn-dU-V7v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zrc-ha-Vih"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myPage1" destination="GO1-mg-h70" id="r91-pQ-RNu"/>
+                        <outlet property="mySegmentControl" destination="1FH-Gg-2qp" id="Oes-NI-I2W"/>
+                        <outlet property="picker1" destination="kVn-dU-V7v" id="VyA-Ub-1Pk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="masComponentesGraficos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="h7F-kd-shl">
+                                <rect key="frame" x="148" y="288" width="94" height="32"/>
+                                <connections>
+                                    <action selector="myAction2:" destination="BYZ-38-t0r" eventType="valueChanged" id="pxS-Oc-yFE"/>
+                                </connections>
+                            </stepper>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="18" translatesAutoresizingMaskIntoConstraints="NO" id="59b-Zp-6ar">
+                                <rect key="frame" x="99" y="353" width="192" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAO-8J-gfX">
+                                <rect key="frame" x="184" y="563" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="ActionEventSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lu2-Ls-2gH"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k86-CH-2zK" userLabel="Label Edad2">
+                                <rect key="frame" x="278" y="568" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7b-PI-Uc7">
+                                <rect key="frame" x="0.0" y="57" width="414" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="edad aqui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg5-QN-Nnj">
+                                        <rect key="frame" x="20" y="162" width="374" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cual es tu edad?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV5-9T-sxF">
+                                        <rect key="frame" x="20" y="37" width="374" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFl-Zc-NbF">
+                                        <rect key="frame" x="18" y="100" width="378" height="31"/>
+                                        <connections>
+                                            <action selector="myAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="EJO-oJ-2VS"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZFl-Zc-NbF" secondAttribute="trailing" constant="20" symbolic="YES" id="BPC-DO-XdS"/>
+                                    <constraint firstItem="ZFl-Zc-NbF" firstAttribute="leading" secondItem="Y7b-PI-Uc7" secondAttribute="leading" constant="20" symbolic="YES" id="KcI-08-DI7"/>
+                                    <constraint firstItem="ZFl-Zc-NbF" firstAttribute="top" secondItem="KV5-9T-sxF" secondAttribute="bottom" constant="31.5" id="XnG-WX-9UH"/>
+                                    <constraint firstAttribute="trailing" secondItem="KV5-9T-sxF" secondAttribute="trailing" constant="20" symbolic="YES" id="qJX-PC-TEn"/>
+                                    <constraint firstItem="KV5-9T-sxF" firstAttribute="leading" secondItem="Y7b-PI-Uc7" secondAttribute="leading" constant="20" symbolic="YES" id="vMl-8b-JE6"/>
+                                    <constraint firstItem="KV5-9T-sxF" firstAttribute="top" secondItem="Y7b-PI-Uc7" secondAttribute="top" constant="37" id="xrF-CO-lVn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y7b-PI-Uc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="9DN-tR-GNE"/>
+                            <constraint firstItem="h7F-kd-shl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="JmA-4u-lhV"/>
+                            <constraint firstItem="Y7b-PI-Uc7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jWD-M8-LJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h7F-kd-shl" secondAttribute="trailing" constant="160" id="x0f-Wg-KIp"/>
+                            <constraint firstItem="Y7b-PI-Uc7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xT9-8s-VPL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Genero" destination="k86-CH-2zK" id="R2Z-46-Yys"/>
+                        <outlet property="Switch1" destination="BAO-8J-gfX" id="fVk-FJ-ofv"/>
+                        <outlet property="imageView1" destination="59b-Zp-6ar" id="SXz-mc-ZkJ"/>
+                        <outlet property="labelEdad" destination="yg5-QN-Nnj" id="4Vi-4Y-3xb"/>
+                        <outlet property="mySlider" destination="ZFl-Zc-NbF" id="I9U-tR-HEJ"/>
+                        <outlet property="myStep" destination="h7F-kd-shl" id="JUu-zQ-fmi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="18" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
