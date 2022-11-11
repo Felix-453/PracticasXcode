@@ -3,7 +3,7 @@
     <pages>
         <page name='ConcatenacionYinterpolacion'/>
         <page name='Conparacion'/>
-        <page name='Untitled Page'/>
+        <page name='variables'/>
         <page name='OperadoresMatematicos'/>
         <page name='if-else'/>
         <page name='arreglos'/>

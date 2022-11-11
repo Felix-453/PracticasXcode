@@ -1,8 +1,6 @@
 //: [Previous](@previous)
-
+// Felix
 import Foundation
-
-
 // diccionario permiten guardar clave-valor
 
 let miDiccionarioClasico = Dictionary< Int, String >()//parametros clave y valor

@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+   
+    @IBOutlet weak var VIew1: UIView!
+    
     @IBOutlet weak var mySlider: UISlider!
     
   
@@ -23,6 +25,8 @@ class ViewController: UIViewController {
   
     @IBOutlet weak var Genero: UILabel!
     
+  
+    @IBOutlet weak var Switch2: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +72,15 @@ class ViewController: UIViewController {
             Genero.text = "Femenino"
         }else{
             Genero.text = "Masculino"
+        }
+    }
+    
+    
+    @IBAction func actionEventSwitch2(_ sender: Any) {
+        if Switch2.isOn{
+            VIew1.isHidden = true
+        }else{
+            VIew1.isHidden = false
         }
     }
     

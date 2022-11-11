@@ -9,7 +9,7 @@ var myOptionalString3: String?
 myOptionalString2 = "Felix"
 myOptionalString3 = "20"
 
-print(myOptionalString)
+print(myOptionalString!)
 
 
 if myOptionalString != nil{
