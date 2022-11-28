@@ -21,15 +21,6 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dvw-aM-R1M">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="92"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7s-3q-mod">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="92"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mhK-Bt-Qcu">
                                         <rect key="frame" x="0.0" y="94" width="374" height="92"/>
@@ -39,20 +30,15 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hfx-jn-vHs" secondAttribute="height" multiplier="1:1" id="Jks-a2-OnO"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="c" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <color key="strokeColor" systemColor="secondarySystemBackgroundColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="c">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Tv-HE-7g0"/>
@@ -63,20 +49,15 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PSD-wg-VkQ" secondAttribute="height" multiplier="1:1" id="yLC-id-sEL"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="+/-" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <color key="strokeColor" systemColor="secondarySystemBackgroundColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="+/-">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="51"/>
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnMasMenos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFA-8S-4qi"/>
@@ -87,20 +68,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="08r-Md-0nL" secondAttribute="height" multiplier="1:1" id="9g4-9S-KH9"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="%" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <color key="strokeColor" systemColor="secondarySystemBackgroundColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="%">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnModulo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Zy-zp-aou"/>
@@ -111,20 +86,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Fq6-ca-PRA" secondAttribute="height" multiplier="1:1" id="5Bw-25-oZ7"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="/" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="/">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnDiv:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkF-yf-YjT"/>
@@ -145,20 +114,15 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wt1-AP-6iE" secondAttribute="height" multiplier="1:1" id="YIa-JP-eA8"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="7" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemMintColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="7">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFj-SD-HH5"/>
@@ -169,20 +133,15 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PiS-pL-RiC" secondAttribute="height" multiplier="1:1" id="Fxj-NG-cSI"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="8" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemMintColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="8">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqj-hK-AMY"/>
@@ -193,20 +152,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Bjq-YB-L1j" secondAttribute="height" multiplier="1:1" id="NTu-w8-BVS"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="9" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="9">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azc-fy-7c2"/>
@@ -217,20 +170,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zQL-MS-apR" secondAttribute="height" multiplier="1:1" id="LkD-fs-wvx"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="*" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="*">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnMulti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q20-98-laM"/>
@@ -253,18 +200,12 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="4" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="4">
-                                                            <attributes>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuw-4b-nLh"/>
@@ -275,20 +216,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Og8-kq-r1O" secondAttribute="height" multiplier="1:1" id="iP8-Xs-rKe"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="5" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="5">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZV-VY-anM"/>
@@ -299,20 +234,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9Ai-ap-Uq1" secondAttribute="height" multiplier="1:1" id="5Cj-18-k7s"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="6" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="6">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdP-bi-NCf"/>
@@ -325,18 +254,12 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="-" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="-">
-                                                            <attributes>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnResta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nux-2f-UCp"/>
@@ -357,20 +280,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TOU-wA-6lg" secondAttribute="height" multiplier="1:1" id="2VF-Yc-Dwg"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="1" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="1">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xRS-Mt-HLu"/>
@@ -381,20 +298,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lPX-Uo-Czh" secondAttribute="height" multiplier="1:1" id="uxU-0g-HcW"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="2" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="2">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCs-s5-nAL"/>
@@ -405,20 +316,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Xzv-NU-WEp" secondAttribute="height" multiplier="1:1" id="gS2-iA-N4h"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="3" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="strokeColor" systemColor="systemCyanColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="3">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nqw-FX-d5x"/>
@@ -429,20 +334,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OzR-Pj-LWw" secondAttribute="height" multiplier="1:1" id="yQP-Op-iMm"/>
                                                 </constraints>
-                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <buttonConfiguration key="configuration" style="plain" title="+" buttonSize="small">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="+">
-                                                            <attributes>
-                                                                <font key="NSFont" size="36" name="Helvetica"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnSuma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZH-4T-G6R"/>
@@ -465,17 +364,12 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="186" height="92"/>
                                                         <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
+                                                        <buttonConfiguration key="configuration" style="plain" title="0" buttonSize="small">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                <color key="strokeColor" systemColor="systemMintColor"/>
                                                             </backgroundConfiguration>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="0">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="36" name="Helvetica"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="btn0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zVh-5c-e6c"/>
@@ -493,18 +387,12 @@
                                                         </constraints>
                                                         <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
+                                                        <buttonConfiguration key="configuration" style="plain" title="." buttonSize="small">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                                <color key="strokeColor" systemColor="systemCyanColor"/>
                                                             </backgroundConfiguration>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content=".">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="36" name="Helvetica"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="btnPunto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OoN-Eu-pXI"/>
@@ -515,20 +403,14 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Psu-dK-Jdc" secondAttribute="height" multiplier="1:1" id="QEp-Lv-qCr"/>
                                                         </constraints>
+                                                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
+                                                        <buttonConfiguration key="configuration" style="plain" title="=" buttonSize="small">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                <color key="strokeColor" systemColor="labelColor"/>
                                                             </backgroundConfiguration>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="=">
-                                                                    <attributes>
-                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                        <font key="NSFont" size="36" name="Helvetica"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="btnIgual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emc-b7-CJX"/>
@@ -540,36 +422,59 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7s-3q-mod">
+                                <rect key="frame" x="20" y="158" width="374" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gK1-wY-et2" secondAttribute="bottom" constant="20" id="1YY-Ry-5pC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gK1-wY-et2" secondAttribute="trailing" constant="20" id="3to-zb-myR"/>
+                            <constraint firstItem="gK1-wY-et2" firstAttribute="top" secondItem="Z7s-3q-mod" secondAttribute="bottom" constant="30" id="BE4-SN-iFr"/>
+                            <constraint firstItem="Z7s-3q-mod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BH2-3Z-HeN"/>
                             <constraint firstItem="gK1-wY-et2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ST0-fX-hIT"/>
+                            <constraint firstItem="Z7s-3q-mod" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="awV-jD-fz0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z7s-3q-mod" secondAttribute="trailing" constant="20" id="xmm-bv-qer"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BtnClear" destination="hfx-jn-vHs" id="Azi-Y2-vP6"/>
                         <outlet property="LabelResultado" destination="Z7s-3q-mod" id="cUv-ZE-sfS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
