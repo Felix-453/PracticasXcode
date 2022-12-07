@@ -12,5 +12,6 @@
         <page name='enumeraciones'/>
         <page name='funciones'/>
         <page name='optional'/>
+        <page name='POO'/>
     </pages>
 </playground>
